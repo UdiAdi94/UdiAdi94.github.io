@@ -2,35 +2,49 @@
 <html>
 <head>
 	<title>Hey, there!</title>
-	<link rel="stylesheet" type="text/css" href="materialize.min.css">
-	<script type="text/javascript" ref="materialize.min.js"></script>
 
-	<!-- <link rel="stylesheet" type="text/css" href="myown.css"> -->
+	<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"/>
+
+      <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+
+      <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+      <script type="text/javascript" src="myown.js"></script>
+
+
+      <!--Let browser know website is optimized for mobile-->
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/> -->
 
 </head>
 <body>
-	<!-- sideNav -->
-	<ul class="side-nav fixed">
-		<li>
-			<!-- <p class="lmenu"> -->
-				<a href="#" class="waves-effect waves-light btn">aaaa</a>
-			<!-- </p> -->
-		</li>
-		<li>
-			<!-- <p class="lmenu"> -->
-				<a href="#" class="waves-effect waves-light btn">bbbb</a>
-			<!-- </p> -->
-		</li>
-		<li>
-			<!-- <p class="lmenu"> -->
-				<a href="#" class="waves-effect waves-light btn">cccc</a>
-			<!-- </p> -->
-		</li>
-		<li>
-			<!-- <p class="lmenu"> -->
-				<a href="#" class="waves-effect waves-light btn">dddd</a>
-			<!-- </p> -->
-		</li>
-	</ul>
+
+	<!--Import jQuery before materialize.js-->
+      
+
+      	<ul id="slide-out" class="side-nav">
+	    	<li>Udit</li>
+	    	<li>
+	    		<div class="user-view">
+	      			<div class="background">
+	        			<img src="photo.jpg">
+	      			</div>
+	      			<a href="#!user"><img class="circle" src="photo.jpg"></a>
+	      			<a href="#!name"><span class="white-text name">John Doe</span></a>
+	      			<a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+	    		</div>
+	    	</li>
+	    	<li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+	    	<li><a href="#!">Second Link</a></li>
+	    	<li><div class="divider"></div></li>
+	    	<li><a class="subheader">Subheader</a></li>
+	    	<li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  		</ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+
+
 </body>
 </html>
